@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
+
+@media (orientation: portrait) {
+    html {
+      background-color: lightblue;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    html {
+      background-color: lightgreen;
+    }
+  }
+
+body {
+	    font-family: serif;
+        font-size: 1rem;
+}
+
+span.titulo {
+        color: blue;
+        font-size: 250%;
+        font-family: 'Zhi Mang Xing';
+        font-weight: bold;
+        letter-spacing: 10px;
+        text-shadow: gray 6px 0;
+}
+
+header {
+  background-color: lightcoral;
+  text-align: center;
+}
+
+ul.nav {
+    list-style-type: none;
+    text-align: center;
+}
+li.nav {
+    background-color: lightcoral;
+    border: black 2PX solid;
+    display: inline;
+    margin-right: 10px;
+}
+
+a.nav:hover {
+    background-color: yellow;
+    color: blue;
+}
+
+a:hover {
+    background-color: white;
+    color: #d4bd9f
+}
+
+section.sect1 {
+    background-color: lightcoral;
+}
+
+p.reset_turing {
+    counter-reset: cuenta-turing;
+}
+p.turing::before {
+counter-increment: cuenta-turing;
+content:counter(cuenta-turing)".";
+}
+/* Section 2 */ 
+section.sect2 {
+    background-color: lightcoral;
+}
+
+table.tabla1{
+    border: 2;
+    background-color: lightskyblue;
+    width: 35%;
+    text-align: center;
+}   
+
+p.turing1:hover {
+    color: blue;
+}
+
+td.turing1:hover{
+    border:blue solid 3px;    
+}
+
+p.turing2:hover {
+    color: blue;
+}
+
+td.turing2:hover{
+    border:blue solid 3px;    
+}
+
+input.turing:focus {
+    border:red solid 3px;
+    padding:4px;
+    background-color: blue;
+    color: white;
+}
+/* Article 1 */
+hr.article1 {
+    height: 25px;
+    border-color: black;
+    background-color: yellow;
+    width: 50%;
+    margin-left: 10%;
+}
+/* Article 2 */
+article.article2 {
+    background-color: lightskyblue;
+    font-size: 50%;
+}
+p.p_article2 {
+    background-color: lightskyblue;
+    border-color: red green;
+    border-width: 20px 50px;
+    border-style: dashed solid;
+    text-align: center;
+    font-size: 200%;
+    color: blue;
+}
+/* Footer */
+
+footer {
+    background-color:lightslategray;
+}
